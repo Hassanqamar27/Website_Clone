@@ -1,0 +1,806 @@
+/* Add this to your existing CSS */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.grayarea{
+    padding-top:2px;
+    padding-bottom: 2px;
+    background-color:gainsboro;
+    display: flex;
+    gap:2%;
+    padding-left: 12%;
+
+    
+}
+
+.body {
+    margin: auto;
+    margin-left: 13%;
+    max-width: 77vw;
+    /* background-color: aqua; */
+    
+   
+}
+
+.navbar {
+    
+    padding-left: 11%;
+    max-width: 90%;
+    margin-top: 0.8%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 3;
+    border-bottom: 2px solid rgba(167, 167, 167, 0.801);
+    padding-bottom: 0.7%;
+    /* background-color: aqua; */
+    /* overflow-x: hidden; */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar i{
+    width: 100px;
+    height: 10%;
+}
+/* .lineafternav{
+    border-bottom: 2px solid black;
+} */
+
+#logo img {
+    width: 80%;
+    height: 7vh;
+}
+
+#navelements {
+    width: 100%;
+    /* background-color: rgb(202, 20, 20); */
+    display: flex;
+    gap: 3.7%;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+.line {
+    width: 0; /* Start with 0 width */
+    border-bottom: 2px solid rgb(105, 255, 5);
+    position: absolute;
+    bottom: 0px;
+    right: 0; /* Start from the left */
+    transition: width 0.5s ease, opacity 0.5s ease; /* Transition width and opacity */
+    opacity: 0; /* Start with 0 opacity */
+}
+
+li:hover .line {
+    width: 100%; /* Expand to the right */
+    opacity: 1; /* Fade in the line */
+}
+button{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-radius: 5px;
+    border: 1px solid blue;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+.btn1{
+    background-color: rgba(31, 31, 221, 0.644);
+    color: white;
+}
+.btn2{
+    background-color: rgba(15, 184, 51, 0.747);
+    color: white;
+}
+/* -------------------------------------------section----------------------------- */
+.section{
+    margin-top: 4%;
+    display: flex;
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+.section img{
+    width:75%;
+    height: 95%;
+
+   
+}
+.welcome{
+    margin-top: 80px;
+    text-align: left;
+    /* background-color: pink; */
+    flex: 1;
+}
+.section_image{
+    flex: 1;
+    /* background-color: aqua; */
+}
+.heading{
+    font-size: 29px;
+    font-weight: bold;
+   
+    
+    
+}
+
+.welcome span{
+    color:lightgreen;
+}
+.textarea{
+    margin-top: 30px;
+    font-size: medium;
+}
+.xd{
+    margin-top: 10px;
+}
+#text_js{
+    color:rgb(29, 3, 179);
+}
+/* --------------------------------donate----------------------------------- */
+.donate{
+    gap: 1%;
+    display:flex;
+    align-items: center;
+    margin-top: 7%;
+    background-color: lightgreen;
+    border-radius: 10px;
+    height: 12vh;
+    align-items: center;
+}
+.amount{
+    display: flex;
+    margin-left: 23px;
+   
+}
+.black{
+    
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+
+}
+.box{
+    background-color: white;
+    border-radius: 5px;
+    padding:1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left:1%;
+    transition: background-color 0.7s ease, color 0.7s ease, opacity 0.7s ease; /* Transition background-color, color, and opacity */
+    cursor: pointer;
+    
+}
+.don{
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    margin-right: 1%;
+   
+}
+.box:hover{
+    background-color: black;
+    color:white;
+    transform: translateX(5px); /* Move element slightly forward on hover */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+.image img{
+    height:70vh;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    
+}
+.doing{
+    padding:15px;
+    background-color: rgb(217, 248, 217);
+    border-radius: 5px;
+    width: 8%;
+    height: 100%;
+    
+}
+.doing img{
+    padding-top: 7%;
+    width: 50%;
+    height: 70%;
+   
+   
+}
+.whatdoing{
+    display: flex;
+    justify-content: space-between; 
+}
+.doing:hover{
+    transform: translateX(5px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.projects{
+    display: flex;
+    gap:2%;
+}
+.ropalnt,.itcourses,.zakat  {
+    border-radius: 10px;
+    margin-top: 80px;
+    width: 100%;
+   /* height: 900%; */
+    position:relative;
+    align-items: center;
+    
+    
+}
+.projects img{
+    width: 100%;
+    height: 300px;
+    filter: contrast(100%) brightness(40%) saturate(100%);
+    border-radius: 10px;
+}
+
+
+
+
+
+.donatebtn{
+    position:absolute;
+    bottom: 10px;
+    color:whitesmoke;
+    background-color: rgb(84, 214, 84);
+    width: 90%;
+    left:10px;
+    border-radius:10px;
+    padding: 10px;
+}
+.name{
+    position: absolute;
+    bottom: 60px;
+    color:white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+/* -------------------------------------foood serve----------------------------- */
+.foodserve{
+    margin-top: 50px;
+    display: flex;
+    gap:35px;
+}
+.imgfoodserve{
+    background-image:url("./img/img6.jpg") ;
+    background-size: cover;
+    width:60%;
+    height: 60%;
+    border-top-left-radius: 80px;
+    
+}
+.insideimgfoodserve{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container1{
+    background-color: rgb(84, 214, 84);
+    z-index: 1;
+    width: 20vw;
+    border-top-left-radius: 80px;
+    height: 35vh;
+    border-bottom: 1px solid white;
+    text-align: center;
+    
+}
+.span{
+    width:56%;
+    height: 60%;
+    /* background-color: aqua; */
+    margin-left: 20%;
+    margin-top: 19%;
+    color: white;
+    
+}
+.container2{
+    /* background-color: blue; */
+    width: 20vw;
+    height: 35vh;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.container3{
+    /* background-color: blue; */
+    width: 20vw;
+    height: 35vh;
+    border-right: 1px solid white;
+    
+    
+}
+.OtherProjects{
+    background-color: aqua;
+    width: 100%;
+    text-align: left;
+}
+#digit1,#digit2{
+    /* font-size: 20px; */
+}
+.bluearea{
+    margin-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("./img/back2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(22, 22, 104);
+
+}
+.bluearea::before{
+    filter: brightness(1.2) contrast(1.5);
+}
+.imgbluearea{
+   font-size: smaller;
+    background-color: white;
+    border-radius: 50%;
+    width: 7vw;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.imgbluearea img{
+    padding-top: 40px;
+    width: 60%;
+    height: 40%;
+}
+.graytest{
+    width: 100%;
+    /* height: 55vh; */
+    background-color: gainsboro;
+   
+    
+}
+#persons img{
+    margin-top: 20px;
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+}
+#personsaying{
+    width: 80%;
+    margin-left: 100px;
+    height: 110px;
+}
+#btn{
+    background-color: lightgreen;
+    margin-bottom: 1%;
+}
+
+
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInLeft {
+  0% {
+    left: 100px;
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    left: 100px;
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    left: 100px;
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+  /* ----------------------------mediaupdates---------------------- */
+  .mediaupdates{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* gap: 3%; */
+  }  
+  .menu{
+    display: none;
+  }
+      
+/* -------------------------------------------------media query-------------------------------------------------- */
+  @media (max-width: 630px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins;
+        font-size: 0.8rem;
+        text-align: left;
+        /* background-color: black; */
+    }
+    .body {
+        margin: auto; /* Center the content */
+        max-width: 100%; /* Allow it to take up the full viewport width */
+        padding: 0 10px; /* Adjust padding as needed */
+        /* background-color: aqua; */
+        overflow-x: hidden;
+    }
+    .navbar{
+        
+        justify-content: space-around;
+        
+    }
+   
+    .menu{
+        display: flex;
+        justify-content: end;
+      }
+      .section_image {
+        display: none;
+    }
+
+
+    /* ---------------------donate------------------------ */
+
+    .donate{
+        height: 100%;
+        padding: 5%;
+        flex-wrap: wrap;
+
+    }
+    .amount{
+        margin-left: 1%;
+    }
+    .black{
+        padding: 5%;
+    
+    }
+    .box{
+        margin-top: 3%;
+        padding: 5%;
+        
+    }
+
+    .image img{
+        height:35vh;  
+    }
+
+    .doing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        height: 100%;
+        margin-top: 2%;
+        padding-bottom: 1%;
+    }
+    
+    .doing img {
+        
+        padding: 5px;
+        width: 80%;
+        height: 70%;
+    }
+    .whatdoing{
+        flex-wrap: wrap;
+    }
+    .projects{
+        flex-wrap: wrap;
+    }
+    .donatebtn{
+        text-align: center;
+    }
+
+
+
+
+
+
+    .foodserve{
+        margin-top: 50px;
+        display: flex;
+
+        flex-wrap: wrap;
+        
+        gap:35px;
+    }
+    .imgfoodserve{
+       
+        width:100%;
+        height: 30%;
+    }
+    .insideimgfoodserve{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .container1{
+      
+        width: 50%;
+        
+        
+    }
+    .span{
+        width:70%;
+       
+        
+    }
+    .container2{
+        /* background-color: blue; */
+        width: 50%;
+        /* background-color: aqua; */
+        
+    }
+    .container3{
+        /* background-color: blue; */
+        width: 50%;
+        /* background-color: aqua; */
+        
+        
+        
+    }
+    .OtherProjects{
+        /* background-color: aqua; */
+        width: 100%;
+        text-align: left;
+    }
+    .bluearea{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Three equal-width columns */
+        grid-gap: 10px; 
+        /* align-items: center; */
+        justify-content: space-around;
+        /* background-color: black; */
+    
+    }
+    .p-blue{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        /* background-color: aqua; */
+        
+        
+        
+    }
+    .imgbluearea{
+        
+        padding: 40px 20px;
+        /* margin: auto; */
+        width: 40%;
+        height: 40%;
+        /* background-color: aqua; */
+       
+        
+    }
+    .imgbluearea img{
+        
+        margin-left: 5%;
+        /* background-color: aquamarine; */
+        padding-top: 2%;
+        width: 70%;
+        height: 19vh;
+        padding-left: 10%;
+        /* background-color: azure; */
+        /* border-radius: 50%; */
+    }
+    #navelements{
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .graytest{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: gainsboro;
+        word-wrap: break-word;
+       
+        
+    }
+    
+    #personsaying{
+        
+        width: 100%;
+        margin-left: 0;
+        margin-left: 10px;
+        margin-bottom: 80px;
+    }
+    #btn{
+        background-color: lightgreen;
+        margin-bottom: 1%;
+    }
+}
+@media (max-width: 1200px) and (min-width: 631px) {
+
+      .navbar{
+        
+        justify-content: space-around;
+        
+    }
+   
+    .menu{
+        display: flex;
+        justify-content: end;
+      }
+
+      .section img{
+        width:100%;
+        height: 95%;
+    
+       
+    }
+    
+    .donate{
+        height: 100%;
+        flex-wrap: wrap;
+        padding: 20px;
+
+    }
+    .box{
+        margin: 10px;
+        padding: 3%;
+    }
+    #navelements {
+        display: none;
+        
+    }
+    .donatebtn{
+        width: 80%;
+        text-align: center;
+    }
+
+    .image img{
+        height:45vh;  
+    }
+
+    .foodserve{
+        margin-top: 50px;
+        display: flex;
+
+        flex-wrap: wrap;
+        
+        gap:35px;
+    }
+    .imgfoodserve{
+        background-image:url("./img/img6.jpg") ;
+        background-size: cover;
+        width:100%;
+        height: 100%;
+        border-top-left-radius: 80px;
+        
+    }
+     
+    .insideimgfoodserve{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .container1{
+        height: 300px;
+        width: 50%;
+        
+        
+    }
+    .span{
+        font-size: 1rem;
+        width:50%;
+       
+        
+    }
+    .container2{
+        /* background-color: blue; */
+        width: 50%;
+        height: 300px;
+        /* background-color: aqua; */
+        
+    }
+    .container3{
+        /* background-color: blue; */
+        width: 50%;
+        height: 300px;
+        /* background-color: aqua; */
+        
+        
+        
+    }
+    .OtherProjects{
+        /* background-color: aqua; */
+        width: 100%;
+        text-align: left;
+    }
+    .graytest{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: gainsboro;
+        word-wrap: break-word;
+       
+        
+    }
+    
+    #personsaying{
+        
+        width: 100%;
+        margin-left: 0;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .doing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        height: 100%;
+        margin-top: 2%;
+        padding-bottom: 1%;
+    }
+    .whatdoing{
+        flex-wrap: wrap;
+    }
+  
+   
+  }
+
+
+
+
+
+
+
+
+
+
+ 
